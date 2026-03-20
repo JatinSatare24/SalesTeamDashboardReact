@@ -12,7 +12,7 @@ function Header() {
             style={{ marginRight: '8px' }}
             aria-hidden="true"
             role="img"
-            aria-label="Dashboard icon"
+            aria-label="Dashboard Icon"
           >
             <path
               d="M12 2v8M12 14v8M4.93 4.93l5.66 5.66M13.41 13.41l5.66 5.66M2 12h8M14 12h8M4.93 19.07l5.66-5.66M13.41 10.59l5.66-5.66"
