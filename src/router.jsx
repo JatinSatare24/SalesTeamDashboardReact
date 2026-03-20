@@ -3,6 +3,8 @@ import Header from './components/Header';
 import Dashboard from './routes/Dashboard';
 import { createBrowserRouter } from 'react-router-dom';
 
+// Router
+
 export const router = createBrowserRouter([
   {
     path: '/',
