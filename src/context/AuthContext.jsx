@@ -4,7 +4,7 @@ import supabase from '../supabase-client';
 const AuthContext = createContext();
 
 export const AuthContextProvider = ({ children }) => {
-//Session state (user info, sign-in status)
+//Session state (user info, sign-in statuses)
   const [session, setSession] = useState(undefined);
 
   useEffect(() => {
