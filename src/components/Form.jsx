@@ -12,7 +12,7 @@ function Form({ metrics }) {
       const { error } = await supabase.from('sales_deals').insert(newDeal);
       if (error) {
         console.error('Error adding deal: ', error.message);
-        return new Error('Failed to a add deal');
+        return new Error('Failed to add deal');
       }
 
       return null;
