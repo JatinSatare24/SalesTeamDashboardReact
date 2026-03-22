@@ -1,16 +1,44 @@
-# React + Vite
+# 📊 Sales Team Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack web application for managing sales deals, built with modern web technologies. This dashboard allows sales representatives to create and track deals while enforcing secure, role-based access using Supabase Row Level Security (RLS).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+### 🔐 Authentication
+- User signup & login (Supabase Auth)
+- Session management
+- Protected routes
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 👤 Role-Based Access
+- Only users with `account_type = 'rep'` can create deals
+- Enforced at **database level (RLS policies)**
 
-## Expanding the ESLint configuration
+### 💼 Deal Management
+- Create new sales deals
+- Associate deals with the logged-in user
+- View user-specific data
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🛡️ Security
+- Row Level Security (RLS) policies
+- JWT-based authentication
+- Backend enforced authorization (not just frontend)
+
+---
+
+## 🧱 Tech Stack
+
+### Frontend
+- Next.js (App Router)
+- React
+
+### Backend / BaaS
+- Supabase
+  - PostgreSQL (Database)
+  - Supabase Auth (JWT-based authentication)
+  - Row Level Security (RLS)
+
+---
+
+## 📁 Project Structure
